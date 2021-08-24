@@ -204,6 +204,17 @@
         requestAnimationFrame(animate);
       }
     }
-    setTimeout(() => startGame(), 200);
+    setTimeout(() => {
+      if (window.innerWidth >= 920) {
+        document.querySelector("canvas").classList.remove("box__not-visible");
+        document.querySelector("h3").classList.remove("box__not-visible");
+        document.querySelector("div").classList.add("box__not-visible");
+        startGame();
+      } else {
+        document.querySelector("canvas").classList.add("box__not-visible");
+        document.querySelector("h3").classList.add("box__not-visible");
+        document.querySelector("div").classList.remove("box__not-visible");
+      }
+    }, 200);
   });
 })();

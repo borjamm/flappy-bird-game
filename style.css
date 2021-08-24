@@ -1,21 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-body {
+.box {
   font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.title {
+.box__title {
+  display: block;
   background: #fc824a;
   margin: 0;
   padding: 1rem;
 }
 
 #canvas {
+  display: block;
   margin-top: 20px;
   width: 900px;
   height: 506px;
   border: 5px solid #000000;
+}
+
+.box__information {
+  display: block;
+  justify-self: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fc824a;
+  padding: 1rem;
+  box-shadow: 1px 1px 14px 0 #d3cbcb;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.box__not-visible {
+  display: none !important;
 }
