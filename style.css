@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
-    background: #FC824A; 
-    margin: 0;
-    padding: 1rem; 
+  background: #fc824a;
+  margin: 0;
+  padding: 1rem;
 }
 
 #canvas {
-    margin-top: 20px;
-    width: 900px;
-    height: 506px;
-    border: 5px solid #000000;
+  margin-top: 20px;
+  width: 900px;
+  height: 506px;
+  border: 5px solid #000000;
 }
