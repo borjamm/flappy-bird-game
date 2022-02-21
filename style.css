@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 .box {
+  position: relative;
   font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .box__title {
   display: block;
-  background: #fc824a;
-  margin: 0;
+  background: #2d2e2e;
+  margin: 0.5rem 1rem 0 1rem;
   padding: 1rem;
+  font-size: 1.17rem;
+  color: rgb(239, 239, 239);
 }
 
 #canvas {
@@ -23,17 +25,60 @@
   border: 5px solid #000000;
 }
 
-.box__information {
+.box__error {
   display: block;
   justify-self: center;
   font-family: "Open Sans", sans-serif;
-  background-color: #fc824a;
-  padding: 1rem;
+  background-color: #ff6347;
+  padding: 1rem 2rem 2rem 2rem;
   box-shadow: 1px 1px 14px 0 #d3cbcb;
   font-weight: bold;
-  margin: 1rem;
+  margin: 4rem 1rem 1rem 1rem;
+}
+
+.box__error-title {
+  color: #ffffff;
+  text-align: center;
+  margin: 0.5rem 0 1.5rem 0;
 }
 
 .box__not-visible {
   display: none !important;
+}
+
+.modal {
+  position: relative;
+  max-width: 280px;
+  min-width: 200px;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 1rem 0 1rem;
+  box-shadow: 1px 1px 14px 0 #d3cbcb;
+  padding: 1rem 2rem 3rem 2rem;
+  background-color: #ffffff;
+}
+
+.modal--hidden {
+  display: none;
+}
+
+.modal__btn {
+  width: 100%;
+  padding: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  font-family: inherit;
+  background-color: rgb(100, 149, 237);
+}
+
+.modal__btn:hover {
+  background-color: rgba(100, 149, 237, 0.7);
 }

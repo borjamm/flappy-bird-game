@@ -2,21 +2,41 @@
 <html lang="es">
   <head>
     <title>Flappy Bird</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, noimageindex, follow" />
-    <meta name="author" content="Borja Machín Morera">
-    <meta name="DC.creator" content="Borja Machín Morera">
-    <meta name="google-site-verification" content="uAayIq9O5VFv4Uk_U47LTPxe7KGdUrCzOXhX9SfMsxU" />
-    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Borja Machín Morera" />
+    <meta name="DC.creator" content="Borja Machín Morera" />
+    <meta
+      name="google-site-verification"
+      content="uAayIq9O5VFv4Uk_U47LTPxe7KGdUrCzOXhX9SfMsxU"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="box">
-      <h3 class="box__title box__not-visible">Flappy Bird - Borja Machín Morera</h3>
-      <canvas id="canvas" class="box__not-visible"></canvas>
-      <div class="box__information box__not-visible">
-        Para jugar a este juego necesita hacerlo desde un ordenador
-      </div>
-      <script defer src="index.js"></script>
-    </body>
+    <h1 class="box__title">Flappy Bird - Borja Machín Morera</h1>
+    <canvas id="canvas" class="box__not-visible"></canvas>
+    <div class="box__error box__not-visible">
+      <h2 class="box__error-title">Información</h2>
+      <p class="box__error-description">
+        Para jugar a este juego necesita hacerlo desde un ordenador, ya que es
+        necesario disponer de un teclado y de una anchura de pantalla mínima de
+        920 píxeles.
+      </p>
+    </div>
+
+    <div class="modal">
+      <h2 class="modal__title">Instrucciones</h2>
+      <p class="modal__text">
+        El jugador tiene 3 vidas y cada vez que se choca con una tubería se
+        decrementa 1 vida. Una vez terminado, se reinicia el juego anotando la
+        puntación récord hasta ese momento en el localstorage del navegador.
+        Para que el personaje suba debe pulsar cualquier tecla sucesivamente o
+        mantenerla pulsada si lo prefiere y, para que el personaje baje, basta
+        con no pulsar ninguna tecla.
+      </p>
+      <button class="modal__btn">Jugar!</button>
+    </div>
+    <script defer src="index.js"></script>
   </body>
 </html>
